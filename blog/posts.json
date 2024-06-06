@@ -10,5 +10,17 @@
       "url": "post2.html",
       "date": "2024-02-01",
       "summary": "This is a summary of Blog Post 2."
+    },
+    {
+      "title": "Blog Post 3",
+      "url": "post3.html",
+      "date": "2024-02-01",
+      "summary": "This is a summary of Blog Post 3."
+    },
+    {
+      "title": "Blog Post 4",
+      "url": "post4.html",
+      "date": "2024-02-01",
+      "summary": "This is a summary of Blog Post 4."
     }
   ]

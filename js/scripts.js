@@ -1,21 +1,41 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Load recent blog posts
-    fetch('blog/posts.json')
-        .then(response => response.json())
-        .then(posts => {
-            const blogPostsContainer = document.getElementById('recent-blog-posts');
-            posts.slice(0, 3).forEach(post => {
-                const postElement = document.createElement('div');
-                postElement.classList.add('card');
-                postElement.innerHTML = `
-                    <h3><a href="${post.url}">${post.title}</a></h3>
-                    <small>${new Date(post.date).toLocaleDateString()}</small>
-                    <p>${post.summary}</p>`;
-                blogPostsContainer.appendChild(postElement);
-            });
-        })
-        .catch(error => console.error('Error loading blog posts:', error));
+    // Load recent blog posts for the homepage
+    if (document.getElementById('recent-blog-posts')) {
+        fetch('blog/posts.json')
+            .then(response => response.json())
+            .then(posts => {
+                const blogPostsContainer = document.getElementById('recent-blog-posts');
+                posts.slice(0, 3).forEach(post => {
+                    const postElement = document.createElement('div');
+                    postElement.classList.add('card');
+                    postElement.innerHTML = `
+                        <h3><a href="${post.url}">${post.title}</a></h3>
+                        <small>${new Date(post.date).toLocaleDateString()}</small>
+                        <p>${post.summary}</p>`;
+                    blogPostsContainer.appendChild(postElement);
+                });
+            })
+            .catch(error => console.error('Error loading blog posts:', error));
+    }
 
+    // Load all blog posts for the blog page
+    if (document.getElementById('blog-posts')) {
+        fetch('posts.json')
+            .then(response => response.json())
+            .then(posts => {
+                const blogPostsContainer = document.getElementById('blog-posts');
+                posts.forEach(post => {
+                    const postElement = document.createElement('div');
+                    postElement.classList.add('card');
+                    postElement.innerHTML = `
+                        <h3><a href="${post.url}">${post.title}</a></h3>
+                        <small>${new Date(post.date).toLocaleDateString()}</small>
+                        <p>${post.summary}</p>`;
+                    blogPostsContainer.appendChild(postElement);
+                });
+            })
+            .catch(error => console.error('Error loading blog posts:', error));
+    }
     // Particle.js configuration
     particlesJS('particles-js', {
         "particles": {

@@ -93,7 +93,7 @@ document.addEventListener('DOMContentLoaded', function() {
             },
             "move": {
                 "enable": true,
-                "speed": 6,
+                "speed": 4,
                 "direction": "none",
                 "random": false,
                 "straight": false,
@@ -133,8 +133,8 @@ document.addEventListener('DOMContentLoaded', function() {
                     "speed": 3
                 },
                 "repulse": {
-                    "distance": 200,
-                    "duration": 0.4
+                    "distance": 150,
+                    "duration": 0.1
                 },
                 "push": {
                     "particles_nb": 4

@@ -5,6 +5,7 @@ body {
     padding: 0;
     background-color: #0d0d0d;
     color: #ffffff;
+    scroll-behavior: smooth;
 }
 
 /* Navbar Styles */
@@ -97,7 +98,6 @@ body {
 /* Content Section Styles */
 .content-section {
     padding: 4em 1em;
-    background-color: #1a1a1a;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     margin: 2em 0;
     border-radius: 8px;
@@ -149,4 +149,27 @@ body {
 
 .card a:hover {
     text-decoration: underline;
+}
+
+/* Blog Post Styles */
+.blog-title {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+}
+
+.blog-info {
+    font-size: 1em;
+    color: #666;
+    margin-bottom: 1.5em;
+}
+
+.blog-info .author {
+    font-weight: bold;
+    color: #ffffff;
+}
+
+article {
+    line-height: 1.6;
+    font-size: 1.1em;
+    color: #ffffff;
 }

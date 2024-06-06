@@ -3,49 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog Post Title - My Portfolio</title>
+    <title>Blog Post Title - Chandler Brown's Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/styles.css">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:;">
 </head>
 <body>
     <header>
-        <div class="container">
-            <h1><a href="../index.html">Chandler Brown</a></h1>
-            <nav>
-                <ul>
-                    <li><a href="../index.html">Home</a></li>
-                    <li><a href="../about.html">About</a></li>
-                    <li><a href="index.html">Blog</a></li>
-                    <li><a href="../projects/index.html">Projects</a></li>
-                </ul>
-            </nav>
-        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="../index.html#home">Home</a></li>
+                <li><a href="../index.html#about">About</a></li>
+                <li><a href="index.html">Blog</a></li>
+                <li><a href="../index.html#projects">Projects</a></li>
+            </ul>
+        </nav>
     </header>
     <main>
-        <section class="banner">
-            <div class="container">
-                <h2>Blog Post Title</h2>
-                <p>Published on: <time datetime="2024-01-01">January 1, 2024</time></p>
-            </div>
-        </section>
         <section class="content-section">
             <div class="container">
+                <h2 class="blog-title">Blog Post Title</h2>
+                <p class="blog-info">
+                    Written by <span class="author">Chandler Brown</span> on <time datetime="2024-01-01">January 1, 2024</time>
+                </p>
                 <article>
                     <p>Blog post content goes here...</p>
+                    <!-- Add more paragraphs, images, or other content as needed -->
                 </article>
             </div>
         </section>
     </main>
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 Chandler Brown</p>
-            <div class="social">
-                <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                <a href="#"><i class="fab fa-github"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-            </div>
-        </div>
-    </footer>
     <script src="../js/scripts.js"></script>
 </body>
 </html>

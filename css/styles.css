@@ -1,13 +1,15 @@
+/* Global Styles */
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f9;
-    color: #333;
+    background-color: #0d0d0d;
+    color: #ffffff;
 }
 
+/* Header Styles */
 header {
-    background-color: #333;
+    background-color: #1a1a1a;
     color: white;
     padding: 1em 0;
     text-align: center;
@@ -48,21 +50,35 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #ff6347;
+    color: #007bff;
 }
 
+/* Hero Section Styles */
 .hero {
-    background: url('images/hero-bg.jpg') no-repeat center center/cover;
-    color: white;
+    position: relative;
     height: 100vh;
+    color: white;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
+    background: #0d0d0d;
+}
+
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.hero .container {
+    position: relative;
+    z-index: 2;
 }
 
 .hero h2 {
-    font-size: 2.5em;
+    font-size: 3em;
     margin-bottom: 0.5em;
 }
 
@@ -71,8 +87,13 @@ nav ul li a:hover {
     margin-bottom: 1em;
 }
 
-.hero .btn {
-    background-color: #ff6347;
+.btn-group {
+    display: flex;
+    gap: 1em;
+}
+
+.btn {
+    background-color: #007bff;
     color: white;
     padding: 0.5em 1.5em;
     text-decoration: none;
@@ -80,22 +101,25 @@ nav ul li a:hover {
     transition: background-color 0.3s;
 }
 
-.hero .btn:hover {
-    background-color: #e5533d;
+.btn:hover {
+    background-color: #0056b3;
 }
 
+/* Content Section Styles */
 .content-section {
     padding: 4em 1em;
-    background-color: white;
+    background-color: #1a1a1a;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     margin: 2em 0;
     border-radius: 8px;
+    text-align: left;
+    margin-top: 100px; /* Adjust for fixed header */
 }
 
 .content-section .container {
     max-width: 900px;
     margin: auto;
-    text-align: center;
+    text-align: left;
 }
 
 .content-section h2 {
@@ -103,27 +127,44 @@ nav ul li a:hover {
     margin-bottom: 1em;
 }
 
-ul {
-    list-style: none;
-    padding: 0;
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
 }
 
-ul li {
-    margin: 0.5em 0;
+.card {
+    background-color: #2a2a2a;
+    padding: 1em;
+    border-radius: 8px;
+    flex: 1;
+    min-width: 280px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
-ul li a {
-    text-decoration: none;
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.card h3 {
+    margin-top: 0;
+}
+
+.card a {
     color: #007bff;
-    transition: color 0.3s;
+    text-decoration: none;
+    font-weight: bold;
 }
 
-ul li a:hover {
-    color: #0056b3;
+.card a:hover {
+    text-decoration: underline;
 }
 
+/* Footer Styles */
 footer {
-    background-color: #333;
+    background-color: #1a1a1a;
     color: white;
     text-align: center;
     padding: 1em 0;
@@ -147,5 +188,5 @@ footer .social a {
 }
 
 footer .social a:hover {
-    color: #ff6347;
+    color: #007bff;
 }

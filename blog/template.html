@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog - My Portfolio</title>
+    <title>Blog Post Title - My Portfolio</title>
     <link rel="stylesheet" href="../css/styles.css">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:;">
 </head>
 <body>
     <header>
         <div class="container">
-            <h1>Blog</h1>
+            <h1><a href="../index.html">Chandler Brown</a></h1>
             <nav>
                 <ul>
                     <li><a href="../index.html">Home</a></li>
@@ -21,12 +22,17 @@
         </div>
     </header>
     <main>
+        <section class="banner">
+            <div class="container">
+                <h2>Blog Post Title</h2>
+                <p>Published on: <time datetime="2024-01-01">January 1, 2024</time></p>
+            </div>
+        </section>
         <section class="content-section">
             <div class="container">
-                <h2>Blog Posts</h2>
-                <ul id="blog-posts">
-                    <!-- Blog posts will be injected here -->
-                </ul>
+                <article>
+                    <p>Blog post content goes here...</p>
+                </article>
             </div>
         </section>
     </main>

@@ -3,19 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Chandler Brown's Portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
 </head>
 <body>
     <header>
         <div class="container">
-            <h1>Welcome to My Portfolio</h1>
+            <h1>Chandler Brown</h1>
             <nav>
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
                     <li><a href="blog/index.html">Blog</a></li>
                     <li><a href="projects/index.html">Projects</a></li>
                 </ul>
@@ -23,11 +24,15 @@
         </div>
     </header>
     <main>
-        <section class="hero">
+        <section id="home" class="hero">
+            <div id="particles-js"></div>
             <div class="container">
-                <h2>Hello, I'm [Your Name]</h2>
-                <p>Welcome to my professional portfolio. Here you can find my latest blog posts, featured projects, and more about me.</p>
-                <a href="#about" class="btn">Learn More</a>
+                <h2>Hello, I'm Chandler</h2>
+                <p>Aspiring Cybersecurity Pen Tester and Software Engineer</p>
+                <div class="btn-group">
+                    <a href="path/to/CV.pdf" class="btn">Download CV</a>
+                    <a href="mailto:youremail@example.com" class="btn">Contact Me</a>
+                </div>
             </div>
         </section>
         <section id="about" class="content-section">
@@ -39,25 +44,30 @@
         <section id="blog" class="content-section">
             <div class="container">
                 <h2>Latest Blog Posts</h2>
-                <ul>
-                    <li><a href="blog/post1.html">Blog Post 1</a></li>
-                    <li><a href="blog/post2.html">Blog Post 2</a></li>
-                </ul>
+                <div class="card-container" id="recent-blog-posts">
+                    <!-- Recent blog posts will be injected here -->
+                </div>
             </div>
         </section>
         <section id="projects" class="content-section">
             <div class="container">
                 <h2>Featured Projects</h2>
-                <ul>
-                    <li><a href="projects/project1.html">Project 1</a></li>
-                    <li><a href="projects/project2.html">Project 2</a></li>
-                </ul>
+                <div class="card-container">
+                    <div class="card">
+                        <h3><a href="projects/project1.html">Project 1</a></h3>
+                        <p>Brief description of Project 1.</p>
+                    </div>
+                    <div class="card">
+                        <h3><a href="projects/project2.html">Project 2</a></h3>
+                        <p>Brief description of Project 2.</p>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
     <footer>
         <div class="container">
-            <p>&copy; 2024 Your Name</p>
+            <p>&copy; 2024 Chandler Brown</p>
             <div class="social">
                 <a href="#"><i class="fab fa-linkedin-in"></i></a>
                 <a href="#"><i class="fab fa-github"></i></a>

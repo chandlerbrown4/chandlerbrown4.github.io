@@ -147,4 +147,16 @@ document.addEventListener('DOMContentLoaded', function() {
         },
         retina_detect: true
     });
+
+    function adjustBackgroundParticlesHeight() {
+        const backgroundParticles = document.getElementById('background-particles');
+        const totalHeight = document.body.scrollHeight;
+        backgroundParticles.style.height = totalHeight + 'px';
+    }
+
+    // Adjust the height on load
+    adjustBackgroundParticlesHeight();
+
+    // Adjust the height on window resize
+    window.addEventListener('resize', adjustBackgroundParticlesHeight);
 });

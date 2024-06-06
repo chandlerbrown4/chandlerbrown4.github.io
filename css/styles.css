@@ -79,13 +79,13 @@ body {
 
 .btn-group {
     display: flex;
-    justify-content: center; /* Center the buttons */
+    justify-content: center; 
     gap: 1em;
 }
 
 .btn {
-    background-color: #2a2a2a; /* Dark grey background */
-    color: white; /* White text */
+    background-color: #2a2a2a; 
+    color: white; 
     padding: 0.5em 1.5em;
     text-decoration: none;
     border-radius: 5px;
@@ -93,8 +93,8 @@ body {
 }
 
 .btn:hover {
-    background-color: #444444; /* Slightly lighter grey on hover */
-    color: white; /* Ensure text remains white on hover */
+    background-color: #444444; 
+    color: white; 
 }
 
 /* Content Section Styles */
@@ -103,7 +103,7 @@ body {
     margin: 2em 0;
     border-radius: 8px;
     text-align: left;
-    margin-top: 100px; /* Adjust for fixed header */
+    margin-top: 100px; 
 }
 
 .content-section .container {
@@ -169,10 +169,10 @@ body {
 /* Background particles container */
 #background-particles {
     position: absolute;
-    top: 100vh; /* Start the background particles below the hero section */
+    top: 100vh;
     width: 100%;
-    height: 200vh; /* Make it twice the height of the viewport */
-    z-index: 0; /* Ensure it is behind the content sections */
+    height: 200vh; 
+    z-index: -100; 
 }
 
 /* Blog Post Styles */
@@ -200,14 +200,14 @@ article {
 
 /* Link Styles */
 a {
-    color: #ffffff; /* Set default link color */
+    color: #ffffff; 
     text-decoration: none;
 }
 
 a:hover {
-    color: #ffffff; /* Set hover link color */
+    color: #ffffff;
 }
 
 a:visited {
-    color: #ffffff; /* Set visited link color to same as default */
+    color: #ffffff; 
 }

@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     const postElement = document.createElement('div');
                     postElement.classList.add('card');
                     postElement.innerHTML = `
-                        <h3><a href="${post.url}">${post.title}</a></h3>
+                        <h3><a href="blog/${post.url}">${post.title}</a></h3>
                         <small>${new Date(post.date).toLocaleDateString()}</small>
                         <p>${post.summary}</p>`;
                     blogPostsContainer.appendChild(postElement);

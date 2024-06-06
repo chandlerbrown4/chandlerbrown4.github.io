@@ -1,75 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chandler Brown's Portfolio</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">
-    <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chandler Brown's Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
 </head>
+
 <body>
-    <div id="particles-js"></div>
-    <header>
-        <nav class="navbar">
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="blog/index.html">Blog</a></li>
-                <li><a href="#projects">Projects</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section id="home" class="hero">
-            <div class="container">
-                <h2>Hello, I'm Chandler Brown</h2>
-                <p>Aspiring Cybersecurity Pen Tester and Software Engineer</p>
-                <div class="btn-group">
-                    <a href="resources/resumeR1.pdf" class="btn">Download Resume</a>
-                    <a href="mailto:evan.brown.us@gmail.com" class="btn">Contact Me</a>
-                </div>
+  <div id="particles-js"></div>
+  <header>
+    <nav class="navbar">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="blog/index.html">Blog</a></li>
+        <li><a href="#projects">Projects</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="home" class="hero">
+      <div class="container">
+        <h2>Hello, I'm Chandler Brown</h2>
+        <p>Aspiring Cybersecurity Pen Tester and Software Engineer</p>
+        <div class="btn-group">
+          <a href="resources/resumeR1.pdf" class="btn">Download Resume</a>
+          <a href="mailto:evan.brown.us@gmail.com" class="btn">Contact Me</a>
+        </div>
+      </div>
+    </section>
+    <div id="background-particles"></div>
+    <section id="about" class="content-section">
+      <div class="container">
+        <h2>About Me</h2>
+        <p>Hello! I'm Chandler Brown, a recent graduate with a Bachelor of Science in Computer Science from Appalachian
+          State University. I'm currently on an exciting journey to become a penetration tester, actively working
+          towards my OSCP certification, which I expect to complete in August 2024.</p>
+
+        <p>My passion for technology and cybersecurity is matched by a diverse skill set that includes proficiency in
+          tools like Git, VS Code, Nessus, Nmap, Burp Suite, and AWS. I am well-versed in multiple programming
+          languages, including Java, Python, Haskell, R, C, C++, HTML, CSS, and PowerShell. My experience spans from
+          hands-on IT internships, where I managed secure data destruction and automated IT processes, to managerial
+          roles in the service industry, where I honed my leadership and communication skills.</p>
+
+        <p>Outside of my professional pursuits, I have a love for coding, cooking, and hiking. Whether I'm exploring new
+          trails or experimenting with a new recipe, I bring the same curiosity and dedication to my hobbies as I do to
+          my work in cybersecurity.</p>
+
+        <p>I'm excited to connect with like-minded professionals and explore opportunities to make a significant impact
+          in the field of cybersecurity. Feel free to reach out to me on <a
+            href="http://www.linkedin.com/in/chandlerbrownnc">LinkedIn</a> or via email at <a
+            href="mailto:evan.brown.us@gmail.com">evan.brown.us@gmail.com</a>. Let's build something great together!</p>
+      </div>
+    </section>
+    <section id="blog" class="content-section">
+      <div class="container">
+        <h2>Latest Blog Posts</h2>
+        <div class="vertical-card-container" id="recent-blog-posts">
+          <!-- Recent blog posts will be injected here -->
+        </div>
+      </div>
+    </section>
+    <section id="projects" class="content-section">
+      <div class="container">
+        <h2>Featured Projects</h2>
+        <div class="card-container">
+          <div class="card">
+            <img src="images/create-octocat.png" alt="Project 1 Image">
+            <div class="card-content">
+              <h3>Test Project 1</h3>
+              <p>Test Project 1 description</p>
             </div>
-        </section>
-        <div id="background-particles"></div> <!-- New particle background container -->
-        <section id="about" class="content-section">
-            <div class="container">
-                <h2>About Me</h2>
-                <p>Brief introduction about yourself.</p>
+          </div>
+          <div class="card">
+            <img src="images/create-octocat.png" alt="Project 2 Image">
+            <div class="card-content">
+              <h3>Test Project 2</h3>
+              <p>Test Project 2 description</p>
             </div>
-        </section>
-        <section id="blog" class="content-section">
-            <div class="container">
-                <h2>Latest Blog Posts</h2>
-                <div class="vertical-card-container" id="recent-blog-posts">
-                    <!-- Recent blog posts will be injected here -->
-                </div>
-            </div>
-        </section>
-        <section id="projects" class="content-section">
-            <div class="container">
-                <h2>Featured Projects</h2>
-                <div class="card-container">
-                    <div class="card">
-                        <img src="images/create-octocat.png" alt="Project 1 Image">
-                        <div class="card-content">
-                            <h3>Test Project 1</h3>
-                            <p>Test Project 1 description</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img src="images/create-octocat.png" alt="Project 2 Image">
-                        <div class="card-content">
-                            <h3>Test Project 2</h3>
-                            <p>Test Project 2 description</p>
-                        </div>
-                    </div>
-                    <!-- Add more project cards as needed -->
-                </div>
-            </div>
-        </section>
-    </main>
-    <script src="js/scripts.js"></script>
+          </div>
+          <!-- Add more project cards as needed -->
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="js/scripts.js"></script>
 </body>
+
 </html>
